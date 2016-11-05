@@ -24,7 +24,8 @@ import com.mindtree.service.HotelService;
 
 /**
  * @author M1035913 hi this is first commit
- *try
+ *first commit 
+ *
  */
 @Controller
 public class HotelController {
