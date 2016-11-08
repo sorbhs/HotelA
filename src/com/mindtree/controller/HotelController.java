@@ -30,6 +30,7 @@ import com.mindtree.service.HotelService;
  *fourth
  *ubuntu
  *fifth
+ *sixth
  */
 @Controller
 public class HotelController{
