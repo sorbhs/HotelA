@@ -38,6 +38,7 @@ import com.mindtree.service.HotelService;
  *docker
  *docker upload-4
  *pom-4
+ *docker-push-1
  */
 @Controller
 public class HotelController{
