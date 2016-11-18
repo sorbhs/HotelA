@@ -1,4 +1,3 @@
-DROP TABLE IF EXISTS `newhotel`.`user`;
 CREATE TABLE  `newhotel`.`user` (
   `UserId` int(11) NOT NULL,
   `Email` varchar(255) DEFAULT NULL,
@@ -7,7 +6,6 @@ CREATE TABLE  `newhotel`.`user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-DROP TABLE IF EXISTS `newhotel`.`hotel`;
 CREATE TABLE  `newhotel`.`hotel` (
   `hotel_id` int(11) NOT NULL,
   `hotel_name` varchar(255) DEFAULT NULL,
@@ -21,7 +19,6 @@ CREATE TABLE  `newhotel`.`hotel` (
 
 
 
-DROP TABLE IF EXISTS `newhotel`.`bookingdetails`;
 CREATE TABLE  `newhotel`.`bookingdetails` (
   `bookingid` int(11) NOT NULL AUTO_INCREMENT,
   `CheckIn` date DEFAULT NULL,
