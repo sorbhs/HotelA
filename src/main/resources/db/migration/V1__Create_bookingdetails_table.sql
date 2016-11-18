@@ -6,6 +6,7 @@ CREATE TABLE  `newhotel`.`user` (
   PRIMARY KEY (`UserId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
 DROP TABLE IF EXISTS `newhotel`.`hotel`;
 CREATE TABLE  `newhotel`.`hotel` (
   `hotel_id` int(11) NOT NULL,
