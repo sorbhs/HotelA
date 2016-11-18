@@ -28,4 +28,23 @@
 <bean id="service" class="com.mindtree.service.HotelService"></bean>
 	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor">
 </bean>
+
+
+
+<!-- <bean id="flyway" class="org.flywaydb.core.Flyway" init-method="migrate">
+  <beans:property name="dataSource" ref="dataSource"/>
+  <beans:property name="locations" value="classpath:db/migration"/>
+  <beans:property name="initOnMigrate" value="true" />
+  <beans:property name="outOfOrder" value="true" />
+</bean> -->
+
+
+
+
+
+
+
+
+
+
 </beans>
