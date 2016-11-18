@@ -3,7 +3,7 @@ CREATE TABLE  `newhotel`.`user` (
   `Email` varchar(255) DEFAULT NULL,
   `Password` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`UserId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ;
 
 
 CREATE TABLE  `newhotel`.`hotel` (
@@ -15,7 +15,7 @@ CREATE TABLE  `newhotel`.`hotel` (
   `hotel_zip` int(11) DEFAULT NULL,
   `hotel_price` int(11) DEFAULT NULL,
   PRIMARY KEY (`hotel_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ;
 
 
 
@@ -26,8 +26,6 @@ CREATE TABLE  `newhotel`.`bookingdetails` (
   `hotelId` int(11) DEFAULT NULL,
   `userId` int(11) DEFAULT NULL,
   PRIMARY KEY (`bookingid`),
-  KEY `FK4a03giac4gd3ifqjut4ar954r` (`hotelId`),
-  KEY `FK68x1mqxry9gs6eysqi21l9ecy` (`userId`),
   CONSTRAINT FOREIGN KEY (`hotelId`) REFERENCES `hotel` (`hotel_id`),
   CONSTRAINT FOREIGN KEY (`userId`) REFERENCES `user` (`UserId`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=latin1;
+);
