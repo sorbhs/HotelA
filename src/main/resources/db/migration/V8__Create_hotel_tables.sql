@@ -1,0 +1,1 @@
+insert into user values (7,"sourabh@insta.com","insta");
