@@ -1,1 +1,0 @@
-insert into user values (5,"sourabh@microsoft.com","microsoft");
