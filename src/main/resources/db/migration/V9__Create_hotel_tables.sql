@@ -1,1 +1,0 @@
-insert into user values (8,"sourabh@facebook.com","facebook");

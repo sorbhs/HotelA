@@ -1,0 +1,1 @@
+insert into user values (9,"sourabh@twitter.com","twitter");
