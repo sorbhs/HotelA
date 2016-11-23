@@ -323,10 +323,11 @@ public class HotelController{
 	
 	private boolean getLoginStatus(HttpServletRequest request,HttpServletResponse response)
 	{
-		Cookie []cookies=request.getCookies();
-		if(cookies.length==1)
+		/*Cookie []cookies=request.getCookies();
+		cookies[0]= 1;
+		if(cookies.length!=1)
 			return false;		
-		else
+		else*/
 			return true;
 		
 	}
