@@ -38,7 +38,7 @@ import com.mindtree.service.HotelService;
  *docker
  *docker upload
  *docker-push-5
- *flyway-34
+ *flyway-35
  */
 @Controller
 public class HotelController{
@@ -79,11 +79,11 @@ public class HotelController{
 	@RequestMapping(value = "/")
 	public ModelAndView add(HttpServletRequest request,HttpServletResponse response) {
 		Cookie []cookies=request.getCookies();
-		for(Cookie cc:cookies)
+		/*for(Cookie cc:cookies)
 		{
 			cc.setMaxAge(0);
 			cc.setValue(null);
-		}
+		}*/
 		//cookies[1].setMaxAge(0);
 		//cookies[1].setValue(null);
 		//response.addCookie(cookies);
