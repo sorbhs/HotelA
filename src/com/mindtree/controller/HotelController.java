@@ -45,7 +45,7 @@ import com.mindtree.service.HotelService;
  *docker
  *docker upload
  *docker-push-5
- *flyway-41
+ *flyway-42
  */
 @RestController
 //@Controller
