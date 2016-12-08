@@ -2,7 +2,11 @@ package com.mindtree.controller;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;  
-import javax.servlet.http.HttpServletResponse;  
+import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -13,11 +17,14 @@ import java.util.Iterator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.amazonaws.Request;
 import com.mindtree.entity.BookingDetails;
+import com.mindtree.entity.Customer;
 import com.mindtree.entity.Hotel;
 import com.mindtree.entity.Users;
 import com.mindtree.service.HotelService;
@@ -38,9 +45,11 @@ import com.mindtree.service.HotelService;
  *docker
  *docker upload
  *docker-push-5
- *flyway-40
+ *flyway-41
  */
-@Controller
+@RestController
+//@Controller
+@RequestMapping("/")
 public class HotelController{
 
 	/**
@@ -63,6 +72,8 @@ public class HotelController{
 	 */
 	public void setService(HotelService service) {
 		this.service = service;
+		
+		
 	}
 
 	/**
@@ -76,6 +87,20 @@ public class HotelController{
 	 * @return
 	 * 
 	 */
+	
+	@GET
+	//@Path("/getEmployee")
+	@Produces("application/json")
+ 	@RequestMapping(value="/getEmployee",method = RequestMethod.GET)
+	public Customer getEmployeeDetails(/*@PathParam("4") int no*/){
+		 Customer cust = new Customer();        
+         cust .setCustNo(4);
+         cust .setCustName("Java4s");
+         cust .setCustCountry("karnataka");
+         //cust.setCustSalary(10000);
+     return cust;	
+	}
+	
 	@RequestMapping(value = "/")
 	public ModelAndView add(HttpServletRequest request,HttpServletResponse response) {
 		Cookie []cookies=request.getCookies();
