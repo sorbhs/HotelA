@@ -1,1 +1,0 @@
-insert into user values(4,"sourabh@whatsapp.com","whatsapp");

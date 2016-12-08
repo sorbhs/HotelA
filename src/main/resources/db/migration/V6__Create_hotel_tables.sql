@@ -1,0 +1,1 @@
+insert into user values(6,"sourabh@google.com","google");
