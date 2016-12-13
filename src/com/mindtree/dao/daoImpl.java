@@ -23,8 +23,9 @@ public class daoImpl implements Dao {
 	 */
 	@SuppressWarnings("unchecked")
 	public ArrayList<Hotel> SearchString(String searchString) {
-		ArrayList<Hotel> list = new ArrayList<Hotel>();
+		ArrayList<Hotel> list = new ArrayList<Hotel>();		
 		Configuration con = new Configuration();
+		System.out.println("----------------------------befre hibernate.cfg.xml-----------------------------------------");
 		con.configure("hibernate.cfg.xml");
 		SessionFactory SF = con.buildSessionFactory();
 		Session session = SF.openSession();
@@ -34,8 +35,6 @@ public class daoImpl implements Dao {
 		for (Hotel listt : list) {
 			System.out.println(listt);
 		}
-	
-		
 		return list;
 	}
 
