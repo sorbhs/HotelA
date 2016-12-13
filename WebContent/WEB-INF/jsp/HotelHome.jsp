@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body >
 <h2>Welcome To hotel Reservation</h2>
 <a href="search">Search Hotels</a>
 <br><br>
@@ -15,5 +15,5 @@
 <a href="doc">Upload Documents</a>
 </body>
 
-<h3>UI change - 3</h3>
+<h3>UI change - 4</h3>
 </html>
