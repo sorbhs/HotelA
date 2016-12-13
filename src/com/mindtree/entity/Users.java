@@ -25,7 +25,7 @@ public class Users {
 	/**
 	 * 
 	 */
-	@Column(name = "Email")
+	@Column(name = "mail")
 	String email;
 
 	/**
