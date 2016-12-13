@@ -1,1 +1,1 @@
-alter table user change column mail Email  varchar(255);
+alter table user change column  Email  mail varchar(255);
