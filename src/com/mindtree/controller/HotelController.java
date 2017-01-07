@@ -46,6 +46,7 @@ import com.mindtree.service.HotelService;
  *docker upload
  *docker-push-5
  *flyway-47
+ *UI change-6
  */
 @RestController
 //@Controller
@@ -289,7 +290,7 @@ public class HotelController{
 				
 		try {
 			BookingDetails bk = new BookingDetails();
-			SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+			SimpleDateFormat formatter = new SimpleDateFormat("yyy	y-MM-dd");
 			Date date = formatter.parse(checkin);
 			java.sql.Date checkindate = new java.sql.Date(date.getTime());
 			bk.setCheckin(checkindate);

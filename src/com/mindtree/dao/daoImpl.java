@@ -25,7 +25,7 @@ public class daoImpl implements Dao {
 	public ArrayList<Hotel> SearchString(String searchString) {
 		ArrayList<Hotel> list = new ArrayList<Hotel>();		
 		Configuration con = new Configuration();
-		System.out.println("----------------------------befre hibernate.cfg.xml-----------------------------------------");
+		System.out.println("----------------------------before hibernate.cfg.xml-----------------------------------------");
 		con.configure("hibernate.cfg.xml");
 		SessionFactory SF = con.buildSessionFactory();
 		Session session = SF.openSession();
