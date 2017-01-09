@@ -7,13 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body >
-<h2>Welcome To hotel Reservation</h2>
+<h2>Welcome To hotel Reservation : Demo Application</h2>
+<h2>Version 0.0.20</h2>
 <a href="search">Search Hotels</a>
 <br><br>
 <a href="mailme">Send us a mail</a>
 <br><br>
 <a href="doc">Upload Documents</a>
 </body>
-
-<h3>UI change - 7</h3>
 </html>

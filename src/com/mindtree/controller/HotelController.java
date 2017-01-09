@@ -30,24 +30,8 @@ import com.mindtree.entity.Users;
 import com.mindtree.service.HotelService;
 
 /**
- * @author M1035913 hi this is first commit
- *first commit 
- *second
- *third
- *fourth
- *ubuntu
- *fifth
- *sixth
- *seven
- *eight
- *nine
- *ten
- *docker
- *docker upload
- *docker-push-5
- *flyway-47
- *UI change-7
- *after sonar reincarnated
+ * @author M1035913
+ 
  */
 @RestController
 //@Controller
