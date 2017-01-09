@@ -8,7 +8,7 @@
 </head>
 <body >
 <h2>Welcome To hotel Reservation : Demo Application</h2>
-<h2>Version 0.0.20</h2>
+<h2>Version 0.0.21</h2>
 <a href="search">Search Hotels</a>
 <br><br>
 <a href="mailme">Send us a mail</a>
