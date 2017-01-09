@@ -1,1 +1,0 @@
-insert into user values(10,"sourabh@def.com","def");
