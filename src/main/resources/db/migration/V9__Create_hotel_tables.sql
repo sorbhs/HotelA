@@ -1,0 +1,1 @@
+alter table user change column userEmail Email varchar(255);
