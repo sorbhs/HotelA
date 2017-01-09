@@ -47,6 +47,7 @@ import com.mindtree.service.HotelService;
  *docker-push-5
  *flyway-47
  *UI change-7
+ *after sonar reincarnated
  */
 @RestController
 //@Controller
