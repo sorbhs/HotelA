@@ -43,7 +43,7 @@ public class HotelController{
 	 */
 	Hotel selectedHotel;
 	/**
-	 * edited for scm TEST in github itself 2
+	 * edited for scm TEST in github itself 3
 	 */
 	Users selectedUser;
 	// HotelService service=new HotelService();
