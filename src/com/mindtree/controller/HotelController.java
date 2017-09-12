@@ -35,7 +35,7 @@ import com.mindtree.service.HotelService;
  */
 @RestController
 //@Controller
-//jenkins1
+//jenkins2
 @RequestMapping("/")
 public class HotelController{
 
